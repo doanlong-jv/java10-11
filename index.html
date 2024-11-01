@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+        }
+        .item1{
+            background-color: blue;
+        }
+        .item2{
+            background-color: brown;
+        }
+        .item3{
+            background-color: violet;
+        }
+        @media (max-width:768px){
+            .container{
+                background-color: aqua;
+            }
+        }
+        @media (max-width:500px){
+            .container{
+                background-color: tomato;
+                /* flex-direction: column; */
+                display: block;
+            }
+                .item{
+            height: 500px;
+            width: 250px;
+            /* object-fit: cover; */
+                }
+        .item img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .itemh2{
+            height: 60px;
+        }
+        
+        }
+         /* .item{
+            height: 500px;
+            width: 250px;
+            /* object-fit: cover;  
+        }
+        .item img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .itemh2{
+            height: 60px;
+        }  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">
+            <div><img src="./img/cherries.jpg" alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis pariatur recusandae aliquam architecto veritatis.</p>
+        </div>
+        <div class="item item2">
+            <div><img src="./img/sandwich.jpg" alt=""></div>
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis pariatur recusandae aliquam architecto veritatis.</p>
+        </div>
+        <div class="item item3">
+            <div><img src="./img/steak.jpg" alt=""></div>
+            <h2>Cherries, interrupted</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis pariatur recusandae aliquam architecto veritatis.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
